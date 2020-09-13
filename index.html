@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Text Typing Effect</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- hello freinds today i will show you how to make text animation  -->
+        <!-- lets start -->
+
+        <div id="text"></div>
+
+        <!-- lets add some js -->
+
+        <script type="text/javascript">
+            var i=0,text;
+            text = "Welcome To Coding Master Channel"
+
+            function typing() {
+                if(i<text.length){
+                    document.getElementById("text").innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typing,80);
+                }
+            }
+            typing();
+            // we have done lets check
+            // thanks for watching
+            // bye Friends
+        </script>
+    </body>
+</html>
